@@ -20,6 +20,7 @@ agent = Agent(
     tools=[DuckDuckGoTools()],
     instructions="Use tables to display data. Don't include any other text.",
     markdown=True,
+    monitoring=True,
 )
 
 agent.print_response("I want to learn python. give me a roadmap with video content.", stream=True)
